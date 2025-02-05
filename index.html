@@ -24,6 +24,43 @@
             document.getElementById('si').style.display = 'block'
         };
       </script>
+
+      <script>
+        $(document).ready(function(){
+            $('.p1').hover(function(){
+                let arriba = Math.random() * (400 - 1) + 1;
+                let abajo = Math.random() * (609 - 1) + 1;
+
+                $(this).css('top', arriba + "px");
+                $(this).css('left', abajo + "px");
+            });
+
+            function createHeart() {
+                const heart = document.createElement("div");
+                heart.classList.add("heart");
+
+                let size = Math.random() * 20 + 10; // Tamaño aleatorio
+                heart.style.width = `${size}px`;
+                heart.style.height = `${size}px`;
+
+                heart.style.left = `${Math.random() * 100}vw`; // Posición aleatoria
+                heart.style.animationDuration = `${Math.random() * 3 + 3}s`; // Duración aleatoria
+
+                document.body.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 7000); // Eliminar después de la animación
+            }
+
+            setInterval(createHeart, 300); // Crear un corazón cada 300ms
+        });
+
+        function dijoSi(){
+            document.getElementById('si').style.display = 'block';
+        }
+     </script>
+
     </head>
     <body>
         <div class="contenedor">
