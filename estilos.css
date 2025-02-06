@@ -38,10 +38,55 @@ body {
 
 /* Estilos para el contenedor */
 .contenedor {
+    margin: auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 300px;
+    width: 900px;
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+.opciones p {
+    background: #775976;
+    display: initial;
+    padding: 12px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+p.p1{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 100px;
+}
+
+p.p1:hover{
+    background: gray;
+    cursor: pointer;
+}
+
+p.p2{
+    position: absolute;
+    top: 400px;
+    left: 750px;
+    width: 100px;
+}
+
+p.p2:hover{
+    background: gray;
+    cursor: pointer;
 }
 
 #si {
+    background: #ffd1dc;
     display: none;
+    left: 420px;
+    position: absolute;
+    top: 122px;
+    width: 550px;
+    color: #775976;
+    padding: 50px;
 }
