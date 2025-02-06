@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Cute</title>
+    <title>¿Quieres ser mi San Valentín?</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -27,11 +26,11 @@
                 heart.classList.add("heart");
 
                 let size = Math.random() * 20 + 10; // Tamaño aleatorio
-                heart.style.width = `${size}px`;
-                heart.style.height = `${size}px`;
+                heart.style.width = ${size}px;
+                heart.style.height = ${size}px;
 
-                heart.style.left = `${Math.random() * 100}vw`; // Posición aleatoria
-                heart.style.animationDuration = `${Math.random() * 3 + 3}s`; // Duración aleatoria
+                heart.style.left = ${Math.random() * 100}vw; // Posición aleatoria
+                heart.style.animationDuration = ${Math.random() * 3 + 3}s; // Duración aleatoria
 
                 document.body.appendChild(heart);
 
@@ -50,20 +49,24 @@
 
 </head>
 <body>
-    <div class="contenedor">
-        <div class="titulo">
-            <h1>¿Quieres ser mi San Valentin?</h1>
-        </div>
+
+    <div class="container text-center">
+        <h1 class="titulo">¿Quieres ser mi San Valentín?</h1>
+        
         <div class="opciones">
-            <p class="p1">No</p>
-            <p onclick="dijoSi()" class="p2">Si</p>
-            <div id="si" style="display: none;">
-                <h2>Esooooooo, gracias por ser el amor de mi vida y mi San Valentín ♡ Te amooo</h2> <br>
-                ｡ﾟﾟ･｡･ﾟﾟ｡ <br>
-                ﾟ。 Te amo Katu <br>
-                ﾟ･｡･ﾟ <br>
-            </div>
+            <button id="no" class="btn btn-danger">No</button>
+            <button id="si-btn" class="btn btn-success">Sí</button>
+        </div>
+
+        <div id="mensaje-si">
+            <h2>¡Esooooooo! Gracias por ser el amor de mi vida y mi San Valentín ♡ Te amooo</h2>
+            <br>
+            ｡ﾟﾟ･｡･ﾟﾟ｡ <br>
+            ﾟ。 Te amo Katu <br>
+            ﾟ･｡･ﾟ <br>
         </div>
     </div>
+
+    <div id="heart-container" aria-hidden="true"></div>
 </body>
 </html>
