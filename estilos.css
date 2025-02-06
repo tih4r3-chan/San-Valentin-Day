@@ -48,9 +48,13 @@ body {
     margin-bottom: 20px;
 }
 
+.opciones {
+    margin-bottom: 20px;
+}
+
 .opciones p {
     background: #775976;
-    display: initial;
+    display: center;
     padding: 12px;
     border-radius: 2px;
     font-weight: bold;
