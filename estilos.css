@@ -49,7 +49,10 @@ body {
 }
 
 .opciones {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .opciones p {
